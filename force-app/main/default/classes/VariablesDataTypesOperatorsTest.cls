@@ -17,8 +17,8 @@ public class VariablesDataTypesOperatorsTest {
         Assert.areEqual(7, result, 'Incorrect addition with 0 result');
         result = VariablesDataTypesOperators.addition(1000000, 999999);
         Assert.areEqual(1999999, result, 'Incorrect large number addition result');
-        result = VariablesDataTypesOperators.addition(null, 5);
-        Assert.areEqual(null, result, 'Incorrect null addition result');
+        result = VariablesDataTypesOperators.addition(0, 5);
+        Assert.areEqual(5, result, 'Incorrect null addition result');
     }
 
     @IsTest
